@@ -166,4 +166,113 @@ function mostrarMensaje() {
 </script>
 
 </body>
+</html>.tarjeta {
+  width: min(92vw, 500px);
+  padding: 35px 20px;
+  border-radius: 30px;
+  background: rgba(10, 10, 5, 0.82);
+  box-shadow: 0 0 40px rgba(255, 220, 40, 0.35);
+  border: 1px solid rgba(255, 230, 80, 0.3);
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 5px 0 20px;
+}
+
+.flores {
+  font-size: 4rem;
+  letter-spacing: 8px;
+  animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo {
+  from { filter: drop-shadow(0 0 2px #ffd900); }
+  to { filter: drop-shadow(0 0 18px #ffe600); }
+}
+
+.mensaje {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.corazon-grande {
+  font-size: 7rem;
+  margin: 15px 0;
+  animation: latido 1.2s infinite;
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.boton {
+  border: 0;
+  border-radius: 30px;
+  padding: 14px 25px;
+  font-size: 1rem;
+  background: #ffd91a;
+  color: #171500;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#secreto {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="corazones">
+  <span class="corazon" style="left:10%; animation-delay:0s;">💛</span>
+  <span class="corazon" style="left:30%; animation-delay:2s;">❤️</span>
+  <span class="corazon" style="left:55%; animation-delay:4s;">🌻</span>
+  <span class="corazon" style="left:80%; animation-delay:1s;">💛</span>
+</div>
+
+<div class="contenedor">
+  <div class="tarjeta">
+
+    <div class="flores">🌻 🌻 🌻</div>
+
+    <h1>Te amo ❤️</h1>
+
+    <div class="corazon-grande">💛</div>
+
+    <div class="mensaje">
+      Eres mi persona favorita. ❤️<br>
+      Aunque estemos lejos,<br>
+      siempre estás conmigo.
+      <br><br>
+      🇺🇾 ❤️ 🇧🇷
+      <br><br>
+      <strong>Siempre juntos 🌻</strong>
+    </div>
+
+    <br>
+
+    <button class="boton" onclick="mostrarMensaje()">
+      💌 Tengo algo para ti
+    </button>
+
+    <div id="secreto">
+      Te amo muchísimo. ❤️<br>
+      Esta página es solo para ti. 🌻
+    </div>
+
+  </div>
+</div>
+
+<script>
+function mostrarMensaje() {
+  document.getElementById("secreto").style.display = "block";
+}
+</script>
+
+</body>
 </html>
